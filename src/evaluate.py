@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import torch
 import torch.nn as nn
 import random
@@ -5,6 +9,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
+import json
 from sklearn.metrics import roc_auc_score, accuracy_score, roc_curve
 
 # Use non-interactive backend
@@ -178,5 +183,10 @@ if __name__ == "__main__":
     
     res_df = pd.DataFrame(comparison_results).T.reset_index().rename(columns={'index': 'Model'})
     res_df.to_csv("results/comparison_table.csv", index=False)
+    
+    # Export for Frontend
+    with open("results/data.json", "w") as f:
+        json.dump(comparison_results, f, indent=4)
+    
     print("\n" + res_df.to_string(index=False))
-    print("\nVisualizations saved to 'plots/' directory.")
+    print("\nVisualizations saved to 'plots/' directory and data.json updated.")

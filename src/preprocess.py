@@ -1,5 +1,7 @@
 import pandas as pd
 import numpy as np
+import json
+import os
 
 
 def preprocess_data(file_path=r'data\soc-redditHyperlinks-title.tsv', sample_size=10000):
@@ -73,4 +75,8 @@ if __name__ == "__main__":
     if df is not None:
         # Save processed file
         df.to_csv(r"data\processed_data.csv", index=False)
-        print("\nDone: Preprocessing complete. Saved to data/processed_data.csv")
+        # Save mapping for server
+        os.makedirs("models", exist_ok=True)
+        with open("models/user_map.json", "w") as f:
+            json.dump(user_map, f)
+        print("\nDone: Preprocessing complete. Saved to data/processed_data.csv and models/user_map.json")

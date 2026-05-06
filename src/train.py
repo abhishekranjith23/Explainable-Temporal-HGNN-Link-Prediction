@@ -101,6 +101,12 @@ def train_model(H_data, df, num_nodes, epochs=60):
     # Plot final loss curve
     plot_loss(loss_history)
 
+    # Save Model
+    os.makedirs("models", exist_ok=True)
+    torch.save(model.state_dict(), "models/hgnn_model.pt")
+    torch.save(predictor.state_dict(), "models/predictor.pt")
+    print("Models saved to models/ directory.")
+
     return model, predictor
 
 
