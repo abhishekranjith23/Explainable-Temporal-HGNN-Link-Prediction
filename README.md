@@ -1,5 +1,5 @@
 
-````markdown
+
 # Explainable Temporal Multi-Relational Hypergraph Neural Network for Link Prediction
 
 A deep learning framework for **link prediction in evolving social networks** using Hypergraph Neural Networks (HGNNs), temporal interaction modeling, relation-aware propagation, and explainable predictions.
