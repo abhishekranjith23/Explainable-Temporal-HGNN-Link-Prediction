@@ -17,7 +17,7 @@ def build_hypergraph(file_path, use_weights=True):
     hyperedges = sorted(df['post_id_encoded'].unique())
     num_edges = len(hyperedges)
 
-    # 🔥 For Sparse implementation, we just need the indices and values
+    #  For Sparse implementation, we just need the indices and values
     indices_u = []
     indices_e = []
     values = []
