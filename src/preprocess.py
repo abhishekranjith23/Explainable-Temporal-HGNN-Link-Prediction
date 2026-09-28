@@ -4,7 +4,7 @@ import json
 import os
 
 
-def preprocess_data(file_path=r'data\soc-redditHyperlinks-title.tsv', sample_size=10000):
+def preprocess_data(file_path=r'data/soc-redditHyperlinks-title.tsv', sample_size=10000):
     print(f"Loading data from: {file_path}")
     
     # Load data (supporting both CSV and Reddit TSV)
@@ -69,12 +69,12 @@ def preprocess_data(file_path=r'data\soc-redditHyperlinks-title.tsv', sample_siz
 
 
 if __name__ == "__main__":
-    file_path = r"data\soc-redditHyperlinks-title.tsv"
+    file_path = r"data/soc-redditHyperlinks-title.tsv"
     df, user_map, interaction_map, post_map = preprocess_data(file_path)
 
     if df is not None:
         # Save processed file
-        df.to_csv(r"data\processed_data.csv", index=False)
+        df.to_csv(r"data/processed_data.csv", index=False)
         # Save mapping for server
         os.makedirs("models", exist_ok=True)
         with open("models/user_map.json", "w") as f:
