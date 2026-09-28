@@ -2,6 +2,14 @@
 
 # Explainable Temporal Multi-Relational Hypergraph Neural Network for Link Prediction
 
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
+  <img src="https://img.shields.io/badge/Graph%20Neural%20Networks-6A1B9A?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
+  <img src="https://img.shields.io/badge/D3.js-F9A03C?style=for-the-badge&logo=d3.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+</p>
 A deep learning framework for **link prediction in evolving social networks** using Hypergraph Neural Networks (HGNNs), temporal interaction modeling, relation-aware propagation, and explainable predictions.
 
 The project uses the **Reddit Hyperlink Network** to study how relationships between subreddit communities can be represented and predicted from historical interaction patterns.
