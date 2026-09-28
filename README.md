@@ -1,8 +1,3 @@
-You're right. You wanted the **entire README content in one continuous document**, not a shortened replacement where parts were omitted. I also understand the intended style from your screenshots: **clean GitHub README, concise paragraphs, clear sections, technical enough for an ML recruiter, but not written like an academic report**.
-
-Below is the **complete updated README from beginning to end**. I have also removed the conflicting repository-result numbers and kept the **final report results only**. The structure follows the same recruiter-first principle GitHub recommends: explain what it does, why it matters, how it works, results, and how to use it. ([GitHub Docs][1])
-
-# `README.md`
 
 ````markdown
 # Explainable Temporal Multi-Relational Hypergraph Neural Network for Link Prediction
